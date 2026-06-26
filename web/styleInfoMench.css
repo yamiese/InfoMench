@@ -1,0 +1,205 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 30px 0 10px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 30px auto 60px;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 12px;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Field */
+.field {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+/* Textarea */
+textarea {
+    min-height: 90px;
+    resize: none;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #000;
+}
+
+/* Button */
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Button Hover */
+input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* PROFILE CARD  */
+
+/* Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #fff;
+
+    border: 1.5px solid #000;
+    border-radius: 14px;
+
+    position: relative;
+    overflow: hidden;
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.7s ease forwards;
+
+    /* smooth interaction */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Title */
+.card h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Info rows */
+.card p {
+    font-size: 14px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+/* Remove last border spacing */
+.card p:last-of-type {
+    border-bottom: none;
+    margin-bottom: 12px;
+}
+
+/* Labels */
+.card p strong {
+    font-weight: 600;
+}
+
+/* Right side text alignment */
+.card p span {
+    text-align: right;
+}
+
+/* Bio section */
+.bio {
+    margin-top: 0;
+    padding: 16px;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #fff;
+}
+/* Secondary button (white style) */
+.btn-secondary {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 6px;
+}
+
+.btn-secondary:hover {
+    background: #000;
+    color: #fff;
+}
